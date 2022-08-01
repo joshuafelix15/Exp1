@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    <h1 style="color: Blue;"align="center">Flora Exotica!</h1>
+    <hr>
+        <div style = "text-align: center;">
+          <a href = "home.html">Home Page</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href = "application.html">Application Form</a>
+        </div>
+    <hr>
+    <form action="floraexotica.php" method="post">
+    <fieldset>
+        <legend align="center" color="blue">Application Form</legend>
+        <table align="center">
+            <tr>
+                <td>Name</td>
+                <td><input type='text' placeholder="Enter your name" required></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Application Number</td>
+                <td><input type='text' placeholder="KU20CSE1001" required></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Password</td>
+                <td><input type='password' placeholder="***" required></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type='date' placeholder="dd/mm/yyyy" required></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Age</td>
+                <td><input type='number'></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type='tel' placeholder="Enter Mobile Number" required></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Email</td>
+                <td><input type='email' placeholder="Enter Email ID" required></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" id="male" value="Male">
+                <label for="male">Male</label></td><br>
+                <td><input type="radio" id="female" value="Female">
+                    <label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea id="address" name = "address" rows="10" cols="20"></textarea>
+            </tr>
+            <tr>
+                <td>Languages Known</td>
+                <td><input type='checkbox' id="english" value="English">
+                <label for="english">English</label></td>
+                <td><input type='checkbox' id="tamil" value="Tamil">
+                    <label for="tamil">Tamil</label></td>
+                <td><input type='checkbox' id="malayalam" value="Malayalam">
+                    <label for="malayalam">Malayalam</label></td>
+                <td><input type='checkbox' id="telugu" value="Telugu">
+                    <label for="telugu">Telugu</label></td>
+                <td><input type='checkbox' id="hindi" value="Hindi">
+                    <label for="hindi">Hindi</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Choose a course:</label>
+                    <select name="course" id="course">
+                        <optgroup label="B.tech">
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>                        
+                        </optgroup>
+                        <optgroup label="Arts">
+                            <option value="B.com">B.com</option>
+                            <option value="B.sc">B.sc</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <td>Upload your photo:</td>
+            <td><label for="myfile">Choose file:</label>
+                <input type="file" id="myfile" name="myfile">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="file">Downloading progress:</label>
+                <progress id="file" value="50" max="100">50%</progress></td>
+        </tr>
+        <tr>
+            <td>SUBMIT</td>
+            <td><input type='submit' required></td>
+        </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
